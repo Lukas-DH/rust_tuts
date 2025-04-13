@@ -1,8 +1,15 @@
-fn main(){
-    let a = 38;
-    let b = 4
-    let sum = a +b 
+fn add(a:i32,b:i32)-> i32{
+    a+b
+}
 
-    println!("{} + {} = {}" ,  a, b , sum)
+
+fn main(){
+   let a = 38;
+   let b = 4;
+   let mut sum = add(a,b);
+   
+   sum += b;
+
+   println!("{} + {} = {}" ,  a, b , sum)
 
 }
